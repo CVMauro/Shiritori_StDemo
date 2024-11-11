@@ -8,7 +8,7 @@ class Player:
 
 @st.cache_resource
 def load_model():
-    return Tagger("-Owakati")
+    return Tagger()
 
 def first_turn(first_turn_result):
     if first_turn_result.pos[:2] != "名詞":
